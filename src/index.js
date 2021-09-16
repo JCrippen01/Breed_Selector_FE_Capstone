@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BreedSelector} from './components/BreedSelector'
+import { BrowserRouter } from 'react-router-dom';
+
 
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <BrowserRouter>
     <BreedSelector />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

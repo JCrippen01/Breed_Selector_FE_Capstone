@@ -4,6 +4,8 @@ import { DogBreeds } from './DropDown';
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import "./BreedSelector.css";
+import { ApplicationViews } from "./ApplicationViews";
+import { NavBar } from "./nav/NavBar";
 
 export const BreedSelector = () => (
   <>
@@ -12,7 +14,10 @@ export const BreedSelector = () => (
         if (localStorage.getItem("selector_users")) {
           return (
             <>
+              <NavBar />
+              <ApplicationViews />
               <DogBreeds />
+             
               
             </>
           );

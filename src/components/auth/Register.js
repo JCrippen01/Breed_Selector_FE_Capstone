@@ -9,7 +9,7 @@ export const Register = (props) => {
     const history = useHistory()
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/customers?email=${user.email}`)
+        return fetch(`http://localhost:8088/users?email=${user.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
@@ -23,12 +23,12 @@ export const Register = (props) => {
                         headers: {
                             "Content-Type": "application/json"
                         },
-                        body: JSON.stringify(customer)
+                        body: JSON.stringify(user)
                     })
                         .then(res => res.json())
                         .then(createdUser => {
                             if (createdUser.hasOwnProperty("id")) {
-                                localStorage.setItem("selector_user", createdUser.id)
+                                localStorage.setItem("selector_users", createdUser.id)
                                 history.push("/")
                             }
                         })

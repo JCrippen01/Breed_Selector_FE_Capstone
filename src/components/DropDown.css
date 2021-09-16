@@ -1,0 +1,9 @@
+div.BreedDropDown {
+  border-width: 2px;
+  border-right: firebrick;
+  border-style: double;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+}
+

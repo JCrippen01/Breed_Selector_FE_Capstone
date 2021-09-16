@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import BreedDropDown  from './components/breedDropDown'
-import { BreedList } from './components/Breed';
+import { BreedSelector} from './components/BreedSelector'
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BreedDropDown />
-    <BreedList />
+    <BreedSelector />
   </React.StrictMode>,
   document.getElementById('root')
 );

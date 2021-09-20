@@ -6,6 +6,8 @@ import { Register } from "./auth/Register";
 import "./BreedSelector.css";
 import { ApplicationViews } from "./ApplicationViews";
 import { NavBar } from "./nav/NavBar";
+import { FilterApp } from "./Filterdogs";
+
 
 export const BreedSelector = () => (
   <>
@@ -17,6 +19,8 @@ export const BreedSelector = () => (
               <NavBar />
               <ApplicationViews />
               <DogBreeds />
+              <FilterApp />
+              
              
               
             </>
